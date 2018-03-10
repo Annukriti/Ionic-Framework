@@ -1,0 +1,116 @@
+<!--
+  Generated template for the PlaceorderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header id="header" style="color: black;">
+   <ion-navbar color="danger" style="color: black;">
+     <ion-title><p style="color: black;">Place Order</p></ion-title>
+   </ion-navbar>
+<style>
+
+</style>
+</ion-header>
+
+<ion-content padding style="overflow: auto; height: 100%;">
+
+<ion-row style="text-align: center;"  no-line >
+  <ion-col col-3>
+      <ion-radio value="v1" color="danger" ></ion-radio>
+  </ion-col>
+
+  <ion-col col-3>
+     <ion-radio value="v2" color="danger"></ion-radio>
+  </ion-col>
+
+  <ion-col col-3>
+     <ion-radio value="v3" color="danger"></ion-radio>
+  </ion-col>
+
+  <ion-col col-3>
+    <ion-radio value="v4" color="danger"  checked="true"></ion-radio>
+  </ion-col>
+ </ion-row>
+<ion-row>
+	<ion-col col-5>
+		<ion-label style="font-size: 15px;" ><b>Total Payable Amount</b></ion-label>
+	</ion-col>
+	<ion-col >
+		<ion-item>
+    <ion-label style="color: black;margin-top: 1%;"></ion-label>
+    <ion-select [(ngModel)]="fruits"  style="color: black;">
+      <ion-option value="a5">Rs. 606</ion-option>
+      <ion-option value="a6">Rs. 1000</ion-option>
+    </ion-select>
+  </ion-item>
+	</ion-col>
+</ion-row>
+
+<ion-row>
+	<ion-col col-5>
+		<ion-label style="font-size: 15px;color: green;" ><b>Total Savings</b></ion-label>
+	</ion-col>
+	<ion-col >
+       <ion-label style="font-size: 15px;color: green;">Rs. 192.08</ion-label>
+	</ion-col>
+</ion-row>
+
+<ion-row>
+	<ion-col ><ion-item>
+		<ion-label style="font-size: 15px;" ><b>Use wallet amount for payment</b></ion-label>
+		<ion-radio style=" text-align: right;" value="c1" color="danger" ></ion-radio>
+		</ion-item>
+	</ion-col>
+</ion-row>
+
+<ion-list radio-group>
+  <ion-item>
+    <ion-label>Cash on Delivery / Sodexo / Ticket Restaurant</ion-label>
+    <ion-radio color="danger" ></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Credit/Debit Card/Net Banking</ion-label>
+    <ion-radio color="danger"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Paytm</ion-label>
+    <ion-radio color="danger" ></ion-radio>
+  </ion-item>
+
+   <ion-item>
+    <ion-label>Ola Money</ion-label>
+    <ion-radio color="danger" ></ion-radio>
+  </ion-item>
+
+   <ion-item>
+    <ion-label>MobKwik</ion-label>
+    <ion-radio color="danger" ></ion-radio>
+  </ion-item>
+
+   <ion-item>
+    <ion-label>FreeCharge</ion-label>
+    <ion-radio color="danger" ></ion-radio>
+  </ion-item>
+
+   <ion-item>
+    <ion-label>JioMoney</ion-label>
+    <ion-radio color="danger" ></ion-radio>
+  </ion-item>
+
+   <ion-item>
+    <ion-label>Airtel Money</ion-label>
+    <ion-radio color="danger" ></ion-radio>
+  </ion-item>
+</ion-list>
+
+
+
+</ion-content>
+<ion-footer  style="height: 80px;">
+  <ion-toolbar color="danger">
+    <ion-title (click)="add4()" style="text-align: center;" >Place Order</ion-title>
+  </ion-toolbar>
+</ion-footer>

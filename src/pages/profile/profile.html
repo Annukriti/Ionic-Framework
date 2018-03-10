@@ -1,0 +1,118 @@
+<!--
+  Generated template for the SecondPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header id="header" style="color: black;">
+   <ion-navbar color="danger" style="color: black;">
+     <ion-title><p style="color: black;">Profile</p></ion-title>
+   </ion-navbar>
+<style>
+
+</style>
+</ion-header>
+<ion-content class="getstart">
+ <ion-grid  style="border: 1px solid #E4DEDD;margin-bottom: 0px;">
+ <ion-row>
+      <ion-col id="div1" col-4 col-md-1 col-lg-1 style="height: 70px;">   
+        <img src="assets/imgs/profile.jpeg"
+        style="border-radius:50%;height: auto;width:65%;
+        margin-left: 10%;background-color: transparent;">
+  </ion-col>
+       <ion-col col-8 col-md-11 id="div2" >
+        <img src="assets/imgs/edit.png" style="width: 25px; margin-left: 80%"  >
+        <div style="margin-top: -21px;">
+        <p style="font-size: 15px; font-weight: bolder;">Sakib <p>
+         <p style="font-size: 15px;margin-top: -9px;font-weight: bolder;">7409709731</p>
+        <p  style="font-size: 15px;margin-top: -8px;font-weight: bolder;">sakib@gmail.com<p>
+      </div>
+      </ion-col>
+      </ion-row>
+     <ion-row (click)="addadress()" style="">
+            <ion-col col-2 col-md-1 col-lg-1>   
+             <img src="assets/imgs/loc1.png" style="margin-left:32%;width:31px;margin-top:12px;  " >
+            </ion-col>
+              <ion-col col-10 col-md-11>  
+                <p style="font-size: 15px;font-style: bold;font-weight: bold;color:brown; "> m-1002 steller jeevan noida aminabad greater noida  uttar pradesh
+                 pincode :201307 </p>
+               </ion-col>
+           </ion-row>
+  </ion-grid>
+<ion-grid>
+
+   <ion-list  id="list" style="color: black;">
+       <ion-item  (click)="order()" style="color: black;height:33px; ">
+            <ion-row  >
+            <ion-col col-1>
+              <ion-icon ios="ios-alarm" md="md-alarm"
+              style="color: black;font-size: 25px;margin-left: 3px;"></ion-icon>
+             </ion-col>
+            <ion-col col-11>
+               <p style="color: black;text-align: left;font-size: 16px; margin-left: 6px;margin-top: 6px;">
+              My Orders</p>
+             </ion-col>
+           </ion-row>
+              </ion-item>
+           <ion-item (click)="wallet()" style="color: black;height:33px;">
+            <ion-row  >
+            <ion-col col-1>
+               <ion-icon ios="ios-briefcase" md="md-briefcase" item-start  style="color: black;font-size: 25px;margin-left: 3px;"> </ion-icon>
+            </ion-col>
+            <ion-col col-11>
+               <p style="color: black;text-align: left;font-size: 16px; margin-left: 6px;margin-top:15px;">
+               My Wallet</p>
+             </ion-col>
+           </ion-row>
+              </ion-item>
+            <ion-item (click)="notify()" style="color: black;height:33px;">  
+            <ion-row  >
+            <ion-col col-1>
+                 <ion-icon ios="ios-book" md="md-book" item-start style="color: black;font-size: 25px;margin-left: 3px;"></ion-icon>
+             </ion-col>
+            <ion-col col-11>
+               <p style="color: black;text-align: left;font-size: 16px; margin-left: 6px;margin-top:15px;">
+              Notification</p>
+              </ion-col>
+           </ion-row>
+              </ion-item>
+           <ion-item (click)="password()" style="color: black;height:33px;">
+            <ion-row  >
+            <ion-col col-1>
+                   <ion-icon ios="ios-lock" md="md-lock" item-start style="color: black;font-size: 25px;margin-left: 3px;"></ion-icon>
+            </ion-col>
+            <ion-col col-11>
+               <p style="color: black;text-align: left;font-size: 16px; margin-left: 6px;margin-top:15px;">
+               Change Password</p>
+             </ion-col>
+           </ion-row>
+              </ion-item>
+           <ion-item (click)="address()" style="color: black;height:33px;">   
+            <ion-row  >
+            <ion-col col-1>
+                   <ion-icon ios="ios-locate" md="md-locate" item-start
+                   (click)="address()"  style="color: black;font-size: 25px;
+                   margin-left: 3px;"></ion-icon>
+            </ion-col>
+            <ion-col col-11>
+               <p style="color: black;text-align: left;font-size: 16px; margin-left: 6px;margin-top:15px;">
+             My Delivery Address</p>
+             </ion-col>
+           </ion-row>
+              </ion-item>
+            <ion-item (click)="order12()" style="color: black;height:33px;">   
+            <ion-row  >
+            <ion-col col-1>
+                   <ion-icon ios="ios-log-out" md="md-log-out" item-start  style="color: black;font-size: 25px;
+                   margin-left: 3px;" ></ion-icon>
+            </ion-col>
+            <ion-col col-11>
+               <p style="color: black;text-align: left;font-size: 16px; margin-left: 6px;margin-top:15px;">
+               Logout</p>
+             </ion-col>
+              </ion-row>
+              </ion-item>
+            </ion-list>
+               </ion-grid>
+    </ion-content>
+

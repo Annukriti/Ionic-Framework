@@ -1,0 +1,146 @@
+<!--
+  Generated template for the Order1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header id="header" style="color: black;">
+   <ion-navbar color="danger" style="color: black;">
+     <ion-title><p style="color: black;">Order Summary</p></ion-title>
+   </ion-navbar>
+<style>
+
+</style>
+</ion-header>
+
+
+<ion-content padding style="overflow: auto; height: 100%;">
+  
+  <div class = "tabs" selectedIndex="1" style="border: groove;border-color: red;" >
+<ion-row>
+<ion-col>
+    <a class = "tab-item"  style="font-size: 15px;color: red;" (click)="orderSummary()">Summary</a>
+</ion-col>
+<ion-col>
+    <a class = "tab-item"  style="font-size: 15px;color: red;" (click)="orderItem()">Items</a>
+</ion-col>
+</ion-row>
+ </div>
+
+ <ion-label><b>Delivery Slot</b></ion-label>
+<ion-card>
+<ion-card-content>
+  <ion-row>
+    <p style="font-size: 15px;color: grey;">Thu 5 Oct 2017</p>
+  </ion-row>
+  <ion-row>
+    <p style="color: grey;font-size: 15px;color: grey;">07:30 pm - 10:00 pm</p>
+  </ion-row>
+  <ion-row>
+       <p style="color: grey;font-size: 15px;">Order Status : Complete</p>
+  </ion-row>
+  <ion-row>
+       <p style="color: grey;font-size: 15px;">Sold & fulfilled by Bigbasket.</p>
+  </ion-row>
+</ion-card-content>
+</ion-card>
+
+<ion-label><b>Address</b></ion-label>
+<ion-card>
+<ion-card-content>
+  <ion-row>
+    <p style="font-size: 15px;color: grey;">ABRNS Software Services Pvt. Ltd.</p>
+  </ion-row>
+  <ion-row>
+    <p style="color: grey;font-size: 15px;color: grey;margin-top: 10px;">M-1002, Near Balak Inter College, Bisrakh, Noida Extension, Sector 1, Greater Noida, Noida-Ghaziabad - 201306</p>
+  </ion-row>
+  <ion-row>
+    <button ion-item>
+                <ion-icon name="call" item-left></ion-icon>
+                <a class="plainText" href="tel:+7906616526">+7906616526</a>
+            </button>
+  </ion-row>
+</ion-card-content>
+</ion-card>
+
+ <ion-label><b>Invoice</b></ion-label>
+<ion-card>
+<ion-card-content>
+  <ion-row>
+    <ion-col col-6>
+      <p style="font-size: 15px;color: grey;">Invoice No.</p>
+    </ion-col>
+    <ion-col>
+      <b><p style="font-size: 15px;text-align: right;">MNOVI-34029128-051017</p></b>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6>
+      <p style="font-size: 15px;color: grey;">Order No.</p>
+    </ion-col>
+    <ion-col>
+      <b><p style="font-size: 15px;text-align: right;">MNOVI-34125469-051017</p></b>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6>
+      <p style="font-size: 15px;color: grey;">Payment By</p>
+    </ion-col>
+    <ion-col>
+      <b><p style="font-size: 15px;text-align: right;">Payment Gateway</p></b>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6>
+      <p style="font-size: 15px;color: grey;">Order Items</p>
+    </ion-col>
+    <ion-col>
+      <b><p style="font-size: 15px;text-align: right;">35 Items</p></b>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6>
+      <p style="font-size: 15px;color: grey;">Sub Total</p>
+    </ion-col>
+    <ion-col>
+      <b><p style="font-size: 15px;text-align: right;">Rs 3034.43</p></b>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6>
+      <p style="font-size: 15px;color: grey;">Delivery Charge</p>
+    </ion-col>
+    <ion-col>
+      <b><p style="font-size: 15px;text-align: right;">Rs 0</p></b>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6>
+      <p style="font-size: 15px;color: grey;">Cashback Voucher</p>
+      <p style="font-size: 15px;color: grey;">"BSAVEOCT5" applied</p>
+    </ion-col>
+    <ion-col>
+      <b><p style="font-size: 15px;text-align: right;">Rs 150.98</p></b>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6>
+      <p style="font-size: 15px;color: grey;">Credit availed from</p>
+      <p style="font-size: 15px;color: grey;">bigbasket Wallet</p>
+    </ion-col>
+    <ion-col>
+      <b><p style="font-size: 15px;text-align: right;">Rs -65</p></b>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6>
+      <p style="font-size: 15px;color: grey;">Final Total</p>
+    </ion-col>
+    <ion-col>
+      <b><p style="font-size: 15px;text-align: right;">Rs 2959</p></b>
+    </ion-col>
+  </ion-row>
+  
+</ion-card-content>
+</ion-card>
+</ion-content>

@@ -1,0 +1,133 @@
+<!--
+  Generated template for the Category1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header id="header" style="color: black;">
+   <ion-navbar color="danger" style="color: black;">
+     <ion-title><p style="color: black;">Category1</p></ion-title>
+   </ion-navbar>
+<style>
+
+</style>
+</ion-header>
+
+
+<ion-content padding style="overflow: auto; height: 100%;">
+  <ion-searchbar (ionInput)="getTopics($event)" [showCancelButton]="shouldShowCancel" (ionCancel)="onCancel($event)" style="margin-right: 6%;height:28%;"></ion-searchbar>
+ <h2 style="margin-top: -3%;text-align: center;font-size: 15px;" >Shop By Category</h2>
+  <ion-list style="margin-top: 1%;">
+  <ion-item>
+    <ion-label style="color: black;margin-top: 1%;" >Fruits & Vegetables</ion-label>
+    <ion-select [(ngModel)]="fruits" multiple="true" style="color: black;">
+      <ion-option value="a1" >All Fruits & Vegetables</ion-option>
+      <ion-option value="a2">Vegetables</ion-option>
+      <ion-option value="a3">Fresh Vegetables</ion-option>
+      <ion-option value="a4">Fruits</ion-option>
+      <ion-option value="a5">Organic Fruits & Vegetables</ion-option>
+      <ion-option value="a6">International Fruits & Vegetables</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list style="margin-top: -2%;">
+  <ion-item>
+    <ion-label style="color: black;margin-top: 1%;">Foodgrains, Oil & Masala</ion-label>
+    <ion-select [(ngModel)]="foods" multiple="true" style="color: black;">
+      <ion-option value="b1">All Fruits & Vegetables</ion-option>
+      <ion-option value="b2">Vegetables</ion-option>
+      <ion-option value="b3">Fresh Vegetables</ion-option>
+      <ion-option value="b4">Fruits</ion-option>
+      <ion-option value="b5">Organic Fruits & Vegetables</ion-option>
+      <ion-option value="b6">International Fruits & Vegetables</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list style="margin-top: -2%;">
+  <ion-item>
+    <ion-label style="color: black;margin-top: 1%;">Bakery, Cakes & Dairy</ion-label>
+    <ion-select [(ngModel)]="bakery" multiple="true" style="color: black;">
+      <ion-option value="c1">All Fruits & Vegetables</ion-option>
+      <ion-option value="c2">Vegetables</ion-option>
+      <ion-option value="c3">Fresh Vegetables</ion-option>
+      <ion-option value="c4">Fruits</ion-option>
+      <ion-option value="c5">Organic Fruits & Vegetables</ion-option>
+      <ion-option value="c6">International Fruits & Vegetables</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list style="margin-top: -2%;">
+  <ion-item>
+    <ion-label style="color: black;margin-top: 1%;">Beverages</ion-label>
+    <ion-select [(ngModel)]="bever" multiple="true" style="color: black;">
+      <ion-option value="d1">All Fruits & Vegetables</ion-option>
+      <ion-option value="d2">Vegetables</ion-option>
+      <ion-option value="d3">Fresh Vegetables</ion-option>
+      <ion-option value="d4">Fruits</ion-option>
+      <ion-option value="d5">Organic Fruits & Vegetables</ion-option>
+      <ion-option value="d6">International Fruits & Vegetables</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list style="margin-top: -2%;">
+  <ion-item>
+    <ion-label style="color: black;margin-top: 1%;">Branded Foods</ion-label>
+    <ion-select [(ngModel)]="branded" multiple="true" style="color: black;">
+      <ion-option value="e1">All Fruits & Vegetables</ion-option>
+      <ion-option value="e2">Vegetables</ion-option>
+      <ion-option value="e3">Fresh Vegetables</ion-option>
+      <ion-option value="e4">Fruits</ion-option>
+      <ion-option value="e5">Organic Fruits & Vegetables</ion-option>
+      <ion-option value="e6">International Fruits & Vegetables</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list style="margin-top: -2%;">
+  <ion-item>
+    <ion-label style="color: black;margin-top: 1%;">Beauty & hygiene</ion-label>
+    <ion-select [(ngModel)]="beauty" multiple="true" style="color: black;">
+      <ion-option value="f1">All Fruits & Vegetables</ion-option>
+      <ion-option value="f2">Vegetables</ion-option>
+      <ion-option value="f3">Fresh Vegetables</ion-option>
+      <ion-option value="f4">Fruits</ion-option>
+      <ion-option value="f5">Organic Fruits & Vegetables</ion-option>
+      <ion-option value="f6">International Fruits & Vegetables</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list style="margin-top: -2%;">
+  <ion-item>
+    <ion-label style="color: black;margin-top: 1%;">Household</ion-label>
+    <ion-select [(ngModel)]="house" multiple="true" style="color: black;">
+     <ion-option value="g1">All Fruits & Vegetables</ion-option>
+      <ion-option value="g2">Vegetables</ion-option>
+      <ion-option value="g3">Fresh Vegetables</ion-option>
+      <ion-option value="g4">Fruits</ion-option>
+      <ion-option value="g5">Organic Fruits & Vegetables</ion-option>
+      <ion-option value="g6">International Fruits & Vegetables</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-list style="margin-top: -2%;">
+  <ion-item>
+    <ion-label style="color: black;margin-top: 1%;">Gourmet & World Food</ion-label>
+    <ion-select [(ngModel)]="gourmet" multiple="true" style="color: black;">
+     <ion-option value="h1">All Fruits & Vegetables</ion-option>
+      <ion-option value="h2">Vegetables</ion-option>
+      <ion-option value="h3">Fresh Vegetables</ion-option>
+      <ion-option value="h4">Fruits</ion-option>
+      <ion-option value="h5">Organic Fruits & Vegetables</ion-option>
+      <ion-option value="h6">International Fruits & Vegetables</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+<button style="margin-left:33%;width:35%;height: 35px;margin-top: 5%;border-radius: 12px;background: transparent;border:1px solid black;background: red" (click)="category3()"  >Open Category! </button>
+</ion-content>
+          
